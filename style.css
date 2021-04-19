@@ -1,0 +1,132 @@
+/* css for the 3 journal entries web page */
+
+* {
+	font-family: "myFont";
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url(./PlayfairDisplay-Regular.ttf);
+}
+
+img {
+	border-style: solid;
+	border-color: black;
+	border-width: 1mm;
+	border-radius: 1cm;
+}
+
+header {
+	/* text styling */
+	color: gray;
+	text-decoration: underline overline;
+	text-align: center;
+}
+
+h3 ~ p {
+	font-size: 16px;
+}
+
+h1 {
+	color: #838396;
+}
+
+h1, h2, h3 {
+	font-size: 24;
+}
+
+p {
+	color: rgb(10,10,10);
+}
+
+h3 {
+	color: hsla(273,19%,75%,0.9);
+}
+
+#formbox {
+	background-color: #ffc87c;
+}
+
+.hidden {
+	display: none;
+}
+
+form p {
+	display: block;
+}
+
+button {
+	margin: 1em 1em 1em 1em;
+	padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+select.yesno {
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+	margin-left: 10ex;
+	margin-right: 1ex;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+form > fieldset {
+	padding-left: 25px;
+}
+
+input[type="date"] {
+	margin: auto;
+}
+
+input + label {
+	font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+	video {
+		height: 300px;
+		width: 400px;
+		max-width: 1000px;
+		min-width: 100px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	video {
+		height: 400px;
+		width: 600px;
+		max-width: 1000px;
+		min-width: 200px;
+	}
+}
+
+#gridlayout {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "first";
+}
+
+.ingrid {
+	position: relative;
+}
+
+#flexlayout {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+.inflex {
+	position: sticky;
+}
+
+#done:hover {
+	background-color: darkgray;
+}
+
+a:active {
+	background-color: yellow;
+}

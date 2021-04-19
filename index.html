@@ -4,6 +4,10 @@
 		<meta charset="UTF-8">
 		<title>3 Journal Entries</title>
 		<link rel="icon" href="smiley.png">
+		<link rel="stylesheet" href="style.css">
+		<style>
+			h2 {color: darkgray;}
+		</style>
 	</head>
 	<body>
 		<main>
@@ -17,12 +21,14 @@
 			<hr>
 			<section>
 				<h1> Friday, April 9, 2021 </h1>
-				<h2> Classes Today: </h2>
-				<ol>
-					<li>PHIL 27 Discussion</li>
-					<li>CSE 130 Lecture</li>
-					<li>CSE 130 Discussion</li>
-				</ol>
+				<div id="gridlayout">
+					<h2 class="ingrid"> Classes Today: </h2>
+					<ol class="ingrid">
+						<li>PHIL 27 Discussion</li>
+						<li>CSE 130 Lecture</li>
+						<li>CSE 130 Discussion</li>
+					</ol>
+				</div>
 				<h3>Skipped:</h3>
 				<p>
 					I had to skip <span> CSE 130 Discussion </span> today as I needed to meet a <em> friend </em>.
@@ -59,15 +65,17 @@
 				<hr>
 				<h1> Sunday, April 11, 2021 </h1>
 				<h2> Tasks </h2>
-				<p>
-					I got a lot of taks done today!
-				</p>
-				<ul>
-					<li>Meeting with CSE 110 Group!</li>
-					<li>Bonding with CSE 110 Group!</li>
-					<li>CSE 110 Lab</li>
-					<li>CSE 110 Quiz</li>
-				</ul>
+				<div id="flexlayout">
+					<p class="inflex">
+						I got a lot of taks done today!
+					</p>
+					<ul class="inflex">
+						<li>Meeting with CSE 110 Group!</li>
+						<li>Bonding with CSE 110 Group!</li>
+						<li>CSE 110 Lab</li>
+						<li>CSE 110 Quiz</li>
+					</ul>
+				</div>
 			</section>
 			<br>
 			<nav>
@@ -75,7 +83,7 @@
 			</nav>
 			<hr>
 			<h2> Add a new entry: </h2>
-			<form>
+			<form id="formbox">
 				<fieldset>
 					<p> Day of the Week: </p>
 					<input type="radio" name="Day">
@@ -120,13 +128,14 @@
 					<br><br>
 					<label>Was today a good day?</label>
 
-					<select>
+					<select class="yesno">
 					<option>Yes</option>
 					<option>No</option>
 					</select>
 
 					<br><br>
-					<button type="button">Done</button>
+					<button type="button" id="done">Done</button>
+					<button class="hidden">Revert</button>
 				</fieldset>				
 			</form> 
 			<br>
